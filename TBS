@@ -1,0 +1,73 @@
+--GETSECUREMODE
+getgenv().SecureMode = true
+
+--IMPORT LIBRARY
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+--OPEN
+print("You're currently using the free version of this script, to remove this message and unlock more features, buy premium at; https://discord.gg/RGxEZq8K22")
+Rayfield:Notify({
+    Title = "Notification Title",
+    Content = "Notification Content",
+    Duration = 6.5,
+    Image = 13984759418,
+    Actions = { 
+       Ignore = {
+          Name = "Welc,",
+          Callback = function()
+          print("From -6HUB- Team.")
+       end
+    },
+ },
+ })
+
+--CREATE WINDOW
+local Window = Rayfield:CreateWindow({
+   Name = "-6HUB-",
+   LoadingTitle = "Welc, to 6.",
+   LoadingSubtitle = "by 6Heart",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, 
+      FileName = "-6HUB-"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "https://discord.gg/RGxEZq8K22",
+      RememberJoins = true
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "-6HUB-",
+      Subtitle = "Key System",
+      Note = "See/Buy key at https://discord.gg/RGxEZq8K22",
+      FileName = "Logger",
+      SaveKey = false,
+      GrabKeyFromSite = false,
+      Key = {"Praise6"}
+   }
+})
+
+--TABS
+local Reach = Window:CreateTab("Reach", 4483362458)
+local React = Window:CreateTab("React", 4483362458)
+local Player = Window:CreateTab("Player", 4483362458)
+local Credits = Window:CreateTab("Credits", 4483362458)
+
+--SECTIONS
+--REACH
+local Section1 = Reach:CreateSection("Reach")
+
+--REACT
+local Section2 = React:CreateSection("React")
+
+--PLAYER
+local Section3 = Player:CreateSection("Player")
+
+--CREDITS
+local Section4 = Credits:CreateSection("Credits")
+
+--CREDITSMENU
+local Paragraph = Credits:CreateParagraph({Title = "Credits", Content = "Script made by @6heart(6), Discord;https://discord.gg/RGxEZq8K22"})
+
+--REACHMENU
