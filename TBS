@@ -7,8 +7,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --OPEN
 print("You're currently using the free version of this script, to remove this message and unlock more features, buy premium at; https://discord.gg/RGxEZq8K22")
 Rayfield:Notify({
-    Title = "Notification Title",
-    Content = "Notification Content",
+    Title = "-6HUB-",
+    Content = "Buy premium at https://discord.gg/RGxEZq8K22",
     Duration = 6.5,
     Image = 13984759418,
     Actions = { 
